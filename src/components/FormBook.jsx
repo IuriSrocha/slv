@@ -22,26 +22,26 @@ export function FormBook() {
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <Row className="mb-3">
         <Form.Group as={Col} md="4" controlId="validationCustom01">
-          <Form.Label>First name</Form.Label>
+          <Form.Label>Titulo</Form.Label>
           <Form.Control
             required
             type="text"
-            placeholder="First name"
-            defaultValue="Mark"
+            placeholder="Titulo"
+            //defaultValue="Mark"
           />
-          <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+          <Form.Control.Feedback></Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md="4" controlId="validationCustom02">
-          <Form.Label>Last name</Form.Label>
+          <Form.Label>Autor</Form.Label>
           <Form.Control
             required
             type="text"
-            placeholder="Last name"
-            defaultValue="Otto"
+            placeholder="Autor"
+           // defaultValue="Otto"
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
-        <Form.Group as={Col} md="4" controlId="validationCustomUsername">
+        {/* <Form.Group as={Col} md="4" controlId="validationCustomUsername">
           <Form.Label>Username</Form.Label>
           <InputGroup hasValidation>
             <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
@@ -55,7 +55,7 @@ export function FormBook() {
               Please choose a username.
             </Form.Control.Feedback>
           </InputGroup>
-        </Form.Group>
+        </Form.Group> */}
       </Row>
       <Row className="mb-3">
         <Form.Group as={Col} md="6" controlId="validationCustom03">
@@ -80,14 +80,7 @@ export function FormBook() {
           </Form.Control.Feedback>
         </Form.Group>
       </Row>
-      <Form.Group className="mb-3">
-        <Form.Check
-          required
-          label="Agree to terms and conditions"
-          feedback="You must agree before submitting."
-          feedbackType="invalid"
-        />
-      </Form.Group>
+     
       <Button type="submit">Submit form</Button>
     </Form>
   );
