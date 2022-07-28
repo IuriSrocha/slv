@@ -5,9 +5,13 @@ import { NavBar } from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavBar />
+
+      <div className='container'>
       <FormBook />
+      </div>
+    
       
     </div>
   );
